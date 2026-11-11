@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import data from "../shared/data";
 import NavBar from "../shared/NavBar";
+import names from "./names";
 import "./SignIn.css";
 import "./SignUp.css";
 import "./Account.css";
@@ -43,11 +44,6 @@ function Account() {
       plateText = plate.substring(0, plate.length - 3) + " " + plate.substring(plate.length - 3);
    }
 
-   const parts = user.name.split(" ");
-   let initials = parts[0][0];
-   if (parts.length > 1) {
-      initials = initials + parts[1][0];
-   }
 
    function handleChange(event) {
       const name = event.target.name;
@@ -140,7 +136,7 @@ function Account() {
             {message && <p className="auth-success">{message}</p>}
 
             <div className="account-box account-header">
-               <p className="account-avatar">{initials}</p>
+               <p className="account-avatar">{names.getInitials(user.name)}</p>
                <div>
                   <p className="account-name">{user.name} <span className="account-badge approved">Verified</span></p>
                   <p className="auth-muted account-left">{user.email}</p>

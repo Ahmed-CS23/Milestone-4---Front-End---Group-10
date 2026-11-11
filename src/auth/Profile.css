@@ -1,0 +1,23 @@
+.profile-review {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+   padding: 13px;
+   border: 1px solid var(--line);
+}
+
+.profile-review p {
+   margin: 0;
+}
+
+.profile-report {
+   display: block;
+   padding: 12px 0;
+   font-size: 15px;
+   font-weight: bold;
+   text-align: center;
+   text-decoration: none;
+   color: var(--error);
+   background-color: var(--surface);
+   border: 1px solid var(--line);
+}
