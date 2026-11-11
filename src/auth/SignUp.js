@@ -189,8 +189,16 @@ function SignUp() {
                   <p className="auth-hint">Never shown to other users.</p>}
 
                <label htmlFor="capacity">Passenger capacity *</label>
-               <input type="number" id="capacity" name="capacity" min="1" max="7"
-                  value={inputs.capacity} onChange={handleChange} />
+               <select id="capacity" name="capacity" value={inputs.capacity} onChange={handleChange}>
+                  <option value="">Select</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+               </select>
                {errors.capacity && <p className="auth-error">{errors.capacity}</p>}
             </div>
          )}
