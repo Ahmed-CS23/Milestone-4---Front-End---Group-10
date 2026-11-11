@@ -1,0 +1,91 @@
+.notif-tabs {
+   display: flex;
+   gap: 4px;
+   border-bottom: 1px solid var(--line);
+}
+
+.notif-tab {
+   padding: 10px 14px;
+   font-size: 15px;
+   font-weight: bold;
+   color: var(--muted);
+   background-color: transparent;
+   border: 0;
+   border-bottom: 3px solid transparent;
+}
+
+.notif-tab-on {
+   color: var(--ink);
+   border-bottom: 3px solid var(--ink);
+}
+
+.notif-mark {
+   padding: 0;
+   font-size: 14px;
+   color: var(--ink);
+   text-align: right;
+   text-decoration: underline;
+   background-color: transparent;
+   border: 0;
+}
+
+.notif-list {
+   gap: 0;
+   padding: 0 15px;
+}
+
+.notif-item {
+   display: flex;
+   gap: 12px;
+   padding: 13px 0;
+   color: var(--ink);
+   text-align: left;
+   text-decoration: none;
+}
+
+.notif-item + .notif-item {
+   border-top: 1px solid var(--line);
+}
+
+.notif-icon {
+   flex-shrink: 0;
+   width: 24px;
+   font-size: 18px;
+   text-align: center;
+}
+
+.notif-body {
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   gap: 4px;
+}
+
+.notif-title {
+   font-weight: bold;
+}
+
+.notif-unread .notif-body > span:nth-child(1) {
+   font-weight: bold;
+}
+
+.notif-new {
+   flex-shrink: 0;
+   font-size: 12px;
+   font-weight: bold;
+   color: var(--info);
+}
+
+button.notif-item {
+   width: 100%;
+   font-size: 15px;
+   font-family: inherit;
+   text-align: left;
+   background-color: transparent;
+   border: 0;
+}
+
+button.notif-item + .notif-item,
+.notif-item + button.notif-item {
+   border-top: 1px solid var(--line);
+}
