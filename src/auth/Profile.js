@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import data from "../shared/data";
 import NavBar from "../shared/NavBar";
 import names from "./names";
+import formatDate from "./dates";
 import "./SignIn.css";
 import "./SignUp.css";
 import "./Account.css";
@@ -63,14 +64,6 @@ function Profile() {
       return "Rider";
    }
 
-   function formatDate(text) {
-      if (!text) {
-         return "";
-      }
-      const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-      const pieces = text.split("-");
-      return Number(pieces[2]) + " " + months[Number(pieces[1]) - 1] + " " + pieces[0];
-   }
 
    const isMe = person.id === data.session.userId;
 
