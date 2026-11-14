@@ -1,0 +1,167 @@
+/* Trips list (WF-53) and trip detail (WF-53a, WF-54, WF-54a, WF-54b) */
+
+.trips-filters {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.trips-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.trips-field.grow {
+    flex-grow: 1;
+}
+
+.trips-field input,
+.trips-field select {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background-color: var(--surface);
+}
+
+.trips-search {
+    height: 40px;
+    padding: 0 18px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: var(--ink);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.trips-error {
+    margin: -8px 0 12px;
+}
+
+/* Rows are clickable; rows with reports are highlighted */
+.trips-table tbody tr {
+    cursor: pointer;
+}
+
+.trips-table tbody tr:hover {
+    background-color: var(--bg);
+}
+
+.trips-table tbody tr.flagged {
+    background-color: #fef7e6;
+}
+
+.trips-pager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.trips-pager .admin-button {
+    width: auto;
+    margin-left: 8px;
+}
+
+/* Detail page */
+.trip-sub {
+    margin: -8px 0 16px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+.trip-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.trip-report {
+    display: block;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    font-size: 13px;
+    color: var(--ink);
+    text-decoration: none;
+    background-color: var(--bg);
+    border-radius: 8px;
+}
+
+.trip-report p {
+    margin: 4px 0 0;
+    color: var(--muted);
+}
+
+.trip-moderation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.trip-moderation p {
+    margin: 0;
+}
+
+.trip-moderation a {
+    color: var(--ink);
+}
+
+.trip-annotate {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.trip-annotate h2,
+.trip-annotate p {
+    margin: 0;
+}
+
+.trip-annotate textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+.trip-annotate .admin-button {
+    width: auto;
+}
+
+.trip-warning {
+    padding: 12px;
+    font-size: 13px;
+    color: var(--warning);
+    background-color: #fef7e6;
+    border: 1px solid #f5d08a;
+    border-radius: 8px;
+}
+
+.trip-warning strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+    .trip-grid {
+        grid-template-columns: 1fr;
+    }
+}
