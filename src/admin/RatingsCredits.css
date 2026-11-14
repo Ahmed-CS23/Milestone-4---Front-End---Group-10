@@ -1,0 +1,105 @@
+/* Ratings & credits (WF-57, WF-58) */
+
+/* Long text in tables may wrap */
+.admin-table td.credit-detail {
+   white-space: normal;
+   min-width: 220px;
+}
+
+.credit-link {
+   padding: 0;
+   font-size: 14px;
+   font-weight: bold;
+   color: var(--ink);
+   text-decoration: underline;
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+.credit-actions {
+   display: flex;
+   gap: 8px;
+}
+
+.credit-actions .admin-button {
+   width: auto;
+   height: 36px;
+}
+
+/* Rating being deleted */
+.credit-quote {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+   padding: 12px;
+   font-size: 14px;
+   background-color: var(--bg);
+   border-radius: 8px;
+}
+
+.credit-quote span {
+   color: var(--muted);
+}
+
+/* Balance / Held / Available boxes in the adjust dialog */
+.credit-tiles {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 8px;
+   margin-bottom: 4px;
+}
+
+.credit-tiles div {
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   border: 1px solid var(--line);
+   border-radius: 8px;
+}
+
+.credit-tiles span {
+   font-size: 12px;
+   color: var(--muted);
+}
+
+.credit-tiles strong {
+   font-size: 20px;
+}
+
+.credit-input {
+   width: 100%;
+   height: 40px;
+   padding: 0 10px;
+   font-size: 14px;
+   border: 1px solid var(--line);
+   border-radius: 8px;
+}
+
+.credit-input.invalid {
+   border-color: var(--error);
+}
+
+/* Credit history header */
+.credit-head {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 8px;
+   margin-bottom: 16px;
+}
+
+.credit-head .admin-title {
+   margin: 0;
+}
+
+.credit-head span {
+   font-weight: bold;
+   font-size: 14px;
+}
+
+.admin-button.credit-adjust {
+   width: auto;
+   margin-top: 16px;
+}
