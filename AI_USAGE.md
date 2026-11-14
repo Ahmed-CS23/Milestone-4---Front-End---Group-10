@@ -40,9 +40,6 @@ Signature: Ahmed Alshareef Date: 14/11/2026
 
 I declare that the Usage Log and the attached evidence contain **all** of my AI use in this milestone, with complete and unedited conversations, and that I understand and can explain all AI-assisted content I contributed.
 
-\[ \] **Option 2 – I did not use any AI tools in this milestone.**
-
-I declare that I did **not** use any generative AI tool in my contribution to this milestone. I understand that if this is found to be false, the case will be treated as **plagiarism** according to KFUPM regulations.
 
 Signature: Abdulaziz Abdulrazaq Date: 14/11/2026
 
@@ -57,9 +54,6 @@ Signature: Abdulaziz Abdulrazaq Date: 14/11/2026
 
 I declare that the Usage Log and the attached evidence contain **all** of my AI use in this milestone, with complete and unedited conversations, and that I understand and can explain all AI-assisted content I contributed.
 
-\[ \] **Option 2 – I did not use any AI tools in this milestone.**
-
-I declare that I did **not** use any generative AI tool in my contribution to this milestone. I understand that if this is found to be false, the case will be treated as **plagiarism** according to KFUPM regulations.
 
 Signature: Asim AlGhamdi _\_**\_**\_**\_**\_**\_**_ Date: \_14/11/2026_\_**\_**\____
 
@@ -79,7 +73,7 @@ Signature: Asim AlGhamdi _\_**\_**\_**\_**\_**\_**_ Date: \_14/11/2026_\_**\_**\
 src/admin: AdminSignIn.js, AdminLayout.js, AdminUI.js, adminData.js, AdminDashboard.js, Verifications.js, VerificationReview.js, AdminTrips.js, AdminTripDetails.js, Reports.js, ReportDetails.js, Users.js, UserDetails.js, RatingsCredits.js, AdjustBalance.js, AdminCreditHistory.js, and their CSS files.  
 Almost all so i used the ai as a check to validate my work and give me the green light to go to the next feature
 
-- Usage Log IDs (Part C):
+- Usage Log IDs (Part C): C03
 
 I declare that the Usage Log and the attached evidence contain **all** of my AI use in this milestone, with complete and unedited conversations, and that I understand and can explain all AI-assisted content I contributed.
 
