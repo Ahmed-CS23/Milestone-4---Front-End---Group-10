@@ -154,7 +154,7 @@ function SignUp() {
          {errors.confirm && <p className="auth-error">{errors.confirm}</p>}
 
          <div className="auth-check">
-            <label htmlFor="offerSeats">I want to offer seats</label>
+            <label htmlFor="offerSeats">Register as a driver too</label>
             <button type="button" id="offerSeats"
                className={inputs.offerSeats ? "switch on" : "switch"}
                onClick={handleToggle}>
@@ -166,7 +166,7 @@ function SignUp() {
             <div className="auth-section">
                <p className="auth-hint">An administrator reviews your vehicle before you can post trips.</p>
 
-               <label htmlFor="make">Make *</label>
+               <label htmlFor="make">Make (brand) *</label>
                <input type="text" id="make" name="make"
                   value={inputs.make} onChange={handleChange} />
                {errors.make && <p className="auth-error">{errors.make}</p>}
