@@ -1,0 +1,56 @@
+.driver-greeting {
+   font-size: 20px;
+}
+
+.driver-big {
+   font-size: 26px;
+   font-weight: bold;
+}
+
+.driver-dash,
+.driver-dash-side,
+.driver-dash-main {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.driver-awaiting {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   padding: 12px;
+   background-color: #eef3fb;
+   border: 1px solid #9fb8e8;
+   border-radius: var(--radius);
+}
+
+.driver-awaiting-label {
+   font-size: 12px;
+   color: var(--info);
+}
+
+.driver-desktop-only {
+   display: none;
+}
+
+/* WF-30D: two columns on desktop */
+@media (min-width: 1024px) {
+   .driver-dash {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 24px;
+   }
+
+   .driver-dash-side {
+      flex: 0 0 320px;
+   }
+
+   .driver-dash-main {
+      flex: 1;
+   }
+
+   .driver-desktop-only {
+      display: flex;
+   }
+}

@@ -1,0 +1,16 @@
+.driver-group {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.driver-group-title {
+   font-size: 13px;
+   font-weight: bold;
+   color: var(--muted);
+}
+
+.driver-plain {
+   color: var(--ink);
+   text-decoration: none;
+}
