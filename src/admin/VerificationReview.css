@@ -1,0 +1,29 @@
+/* Verification review (WF-52a, WF-52d): two columns on desktop, one on small screens */
+.review-grid {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 16px;
+   align-items: start;
+}
+
+.review-left {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.review-decision {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.review-decision .admin-banner {
+   margin: 0;
+}
+
+@media (max-width: 900px) {
+   .review-grid {
+      grid-template-columns: 1fr;
+   }
+}
