@@ -1,0 +1,82 @@
+.msg-header {
+   display: flex;
+   gap: 12px;
+   padding-bottom: 12px;
+   border-bottom: 1px solid var(--line);
+}
+
+.msg-avatar {
+   flex-shrink: 0;
+   width: 40px;
+   height: 40px;
+   margin: 0;
+   padding-top: 10px;
+   font-size: 13px;
+   font-weight: bold;
+   text-align: center;
+   background-color: var(--surface);
+   border: 1px solid var(--line);
+}
+
+.msg-title {
+   flex-grow: 1;
+}
+
+.msg-title h2 {
+   margin: 0;
+   font-size: 17px;
+}
+
+.msg-title p {
+   margin: 4px 0 0 0;
+   text-align: left;
+}
+
+.msg-close {
+   font-weight: bold;
+   color: var(--ink);
+}
+
+.msg-list {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.msg-row {
+   display: flex;
+}
+
+.msg-row.mine {
+   justify-content: flex-end;
+}
+
+.msg-bubble {
+   width: 75%;
+   margin: 0;
+   padding: 10px 12px;
+   font-size: 15px;
+   background-color: var(--surface);
+   border: 1px solid var(--line);
+}
+
+.msg-row.mine .msg-bubble {
+   color: var(--surface);
+   background-color: var(--ink);
+   border-color: var(--ink);
+}
+
+.msg-form {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.msg-simulate {
+   padding: 0;
+   font-size: 13px;
+   color: #6b2fa0;
+   text-decoration: underline;
+   background-color: transparent;
+   border: none;
+}
