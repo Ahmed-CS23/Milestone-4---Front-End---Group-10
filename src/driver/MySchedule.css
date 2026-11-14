@@ -1,0 +1,91 @@
+.driver-schedule {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.driver-class-bad {
+   border-color: var(--error);
+}
+
+.driver-class-times {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+}
+
+.driver-class-times .driver-field {
+   flex: 1 1 90px;
+}
+
+.driver-class-course {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.driver-trash {
+   flex-shrink: 0;
+   width: 36px;
+   height: 36px;
+   font-size: 16px;
+   background-color: transparent;
+   border: 0;
+   cursor: pointer;
+}
+
+.driver-drop {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 6px;
+   padding: 20px 16px;
+   text-align: center;
+   background-color: #f6f6f6;
+   border: 1px dashed var(--muted);
+   border-radius: var(--radius);
+}
+
+.driver-file {
+   position: relative;
+   width: auto;
+   padding: 10px 20px;
+   overflow: hidden;
+}
+
+.driver-file input[type="file"] {
+   position: absolute;
+   inset: 0;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.driver-days {
+   display: flex;
+   flex-direction: column;
+}
+
+.driver-day {
+   display: flex;
+   align-items: flex-start;
+   gap: 12px;
+   padding: 10px 0;
+   font-size: 14px;
+   border-bottom: 1px solid var(--line);
+}
+
+.driver-day-name {
+   flex: 0 0 44px;
+}
+
+.driver-day-classes {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+}
+
+.driver-class-times input,
+.driver-class-times select {
+   min-width: 0;
+}
