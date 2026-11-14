@@ -89,6 +89,10 @@ function SignIn() {
          <p className="auth-center">
             New to UniRide? <Link to="/account/sign-up">Create an account</Link>
          </p>
+
+         <p className="auth-center">
+            Administrator? <Link to="/admin/sign-in">Admin sign-in</Link>
+         </p>
       </form>
    );
 }
