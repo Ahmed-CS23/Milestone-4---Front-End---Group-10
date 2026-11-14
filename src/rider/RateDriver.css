@@ -1,0 +1,118 @@
+.rider-rate-page,
+.rider-rate-form {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.rider-rate-page {
+   max-width: 700px;
+   margin: 0 auto;
+   padding: 24px 16px 40px;
+}
+
+.rider-rate-page :is(h1, h2, p) {
+   margin: 0;
+}
+
+.rider-rate-card {
+   margin: 0;
+   padding: 16px;
+   border: 1px solid var(--line);
+   border-radius: var(--radius);
+   background: var(--surface);
+}
+
+.rider-rate-card p {
+   margin-top: 6px;
+}
+
+.rider-rate-stars,
+.rider-rate-links {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
+}
+
+.rider-rate-star {
+   position: relative;
+   display: grid;
+   place-items: center;
+   min-width: 44px;
+   min-height: 44px;
+   border: 1px solid var(--line);
+   border-radius: 8px;
+   color: var(--muted);
+   font-size: 24px;
+   cursor: pointer;
+}
+
+.rider-rate-star input {
+   position: absolute;
+   opacity: 0;
+}
+
+.rider-rate-star:focus-within {
+   outline: 2px solid var(--info);
+}
+
+.rider-rate-star-selected {
+   border-color: var(--warning);
+   color: var(--warning);
+   background: #fff5d6;
+}
+
+.rider-rate-form textarea {
+   min-height: 100px;
+   padding: 10px;
+   border: 1px solid var(--line);
+   border-radius: 8px;
+   font: inherit;
+   resize: vertical;
+}
+
+.rider-rate-form textarea[aria-invalid="true"] {
+   border-color: var(--error);
+}
+
+.rider-rate-error {
+   color: var(--error);
+}
+
+.rider-rate-info {
+   border-color: var(--info);
+   background: #eef4ff;
+}
+
+.rider-rate-primary {
+   min-height: 44px;
+   border: 0;
+   border-radius: 8px;
+   color: var(--surface);
+   background: var(--ink);
+   font: inherit;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.rider-rate-primary:disabled {
+   opacity: 0.55;
+   cursor: default;
+}
+
+.rider-rate-error-banner {
+   border-color: var(--error);
+   color: var(--error);
+   background: #fdecec;
+}
+
+a.rider-rate-primary {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+}
+
+.rider-rate-card:disabled .rider-rate-star {
+   cursor: default;
+}

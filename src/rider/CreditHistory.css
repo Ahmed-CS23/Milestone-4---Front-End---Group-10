@@ -1,0 +1,82 @@
+.rider-credit-page,
+.rider-credit-ledger {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.rider-credit-page {
+   width: 100%;
+   max-width: 700px;
+   margin: 0 auto;
+   padding: 24px 16px 40px;
+}
+
+.rider-credit-page h1,
+.rider-credit-page p,
+.rider-credit-page dl,
+.rider-credit-page dd,
+.rider-credit-ledger {
+   margin: 0;
+}
+
+.rider-credit-page h2 {
+   margin: 0 0 8px;
+   font-size: 1.125rem;
+}
+
+.rider-credit-ledger {
+   padding: 0;
+   list-style: none;
+}
+
+.rider-credit-row {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 12px;
+}
+
+.rider-credit-card {
+   padding: 16px;
+   border: 1px solid var(--line);
+   border-radius: var(--radius);
+   background: var(--surface);
+}
+
+.rider-credit-page dl,
+.rider-credit-entry,
+.rider-credit-pagination {
+   justify-content: space-between;
+}
+
+.rider-credit-page dd {
+   font-size: 1.25rem;
+   font-weight: bold;
+}
+
+.rider-credit-button {
+   min-height: 44px;
+   padding: 8px 14px;
+   border: 1px solid var(--line);
+   border-radius: 8px;
+   color: var(--ink);
+   background: var(--surface);
+   font: inherit;
+   cursor: pointer;
+}
+
+.rider-credit-button[aria-pressed="true"] {
+   color: var(--surface);
+   border-color: var(--ink);
+   background: var(--ink);
+}
+
+.rider-credit-button:disabled {
+   opacity: 0.55;
+   cursor: default;
+}
+
+.rider-credit-muted { color: var(--muted); }
+.rider-credit-positive { color: var(--success); }
+.rider-credit-negative { color: var(--error); }
