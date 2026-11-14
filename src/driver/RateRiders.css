@@ -1,0 +1,38 @@
+.driver-person-row {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.driver-person-row .driver-pill {
+   margin-left: auto;
+}
+
+.driver-stars {
+   display: flex;
+   gap: 4px;
+}
+
+.driver-stars button {
+   width: 40px;
+   height: 40px;
+   font-size: 24px;
+   line-height: 1;
+   color: var(--muted);
+   background-color: transparent;
+   border: 0;
+   cursor: pointer;
+}
+
+.driver-stars button.on {
+   color: var(--ink);
+}
+
+.driver-stars button:disabled {
+   cursor: not-allowed;
+   opacity: 0.6;
+}
+
+.driver-card textarea:disabled {
+   background-color: #f0f0f0;
+}
