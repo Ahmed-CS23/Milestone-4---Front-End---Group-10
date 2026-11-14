@@ -1,0 +1,39 @@
+.driver-pair-row {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+}
+
+.driver-pair-row .driver-field {
+   flex: 1 1 120px;
+}
+
+.driver-pair-row .driver-grow {
+   flex: 2 1 160px;
+}
+
+.driver-proposal-title {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   font-size: 15px;
+}
+
+.driver-clash {
+   border-color: var(--error);
+}
+
+.driver-inline-links {
+   display: flex;
+   gap: 16px;
+}
+
+.driver-proposal-edit {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.driver-left {
+   align-self: flex-start;
+}
