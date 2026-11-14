@@ -1,0 +1,114 @@
+/* Reports list (WF-55, WF-55M) and investigation (WF-55a, 55b, 55d) */
+
+/* Mobile cards are hidden on desktop, the table is hidden on mobile */
+.reports-mobile {
+   display: none;
+}
+
+@media (max-width: 600px) {
+   .reports-desktop {
+      display: none;
+   }
+
+   .reports-mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+}
+
+.reports-card {
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+   padding: 12px 14px;
+   font-size: 14px;
+   color: var(--ink);
+   text-decoration: none;
+   background-color: var(--surface);
+   border: 1px solid var(--line);
+   border-radius: var(--radius);
+}
+
+.reports-card-top {
+   display: flex;
+   justify-content: space-between;
+}
+
+.reports-card-top span {
+   color: var(--muted);
+   font-size: 12px;
+}
+
+/* Investigation: three columns on desktop */
+.report-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 16px;
+   align-items: start;
+}
+
+.report-column {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.report-column .admin-panel a {
+   color: var(--ink);
+   font-size: 14px;
+}
+
+.report-outcome {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   font-size: 14px;
+}
+
+.report-outcome .admin-banner {
+   margin: 0;
+}
+
+.report-outcome label.report-option {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   cursor: pointer;
+}
+
+.report-outcome fieldset {
+   margin: 0;
+   padding: 0;
+   border: none;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.report-outcome fieldset:disabled {
+   opacity: 0.5;
+}
+
+.report-outcome textarea {
+   width: 100%;
+   padding: 10px;
+   font-size: 14px;
+   font-family: inherit;
+   border: 1px solid var(--line);
+   border-radius: 8px;
+}
+
+.report-outcome textarea.invalid {
+   border-color: var(--error);
+}
+
+.report-outcome p {
+   margin: 0;
+}
+
+@media (max-width: 1000px) {
+   .report-grid {
+      grid-template-columns: 1fr;
+   }
+}
