@@ -9,7 +9,6 @@ import { Toast } from "./AdminUI";
 import "./Admin.css";
 import "./Reports.css";
 
-// WF-55 Reports list, WF-55c toast after an outcome, WF-55M mobile cards (FR-A5 step 1)
 function Reports() {
    const location = useLocation();
    const fromDetail = location.state || {};
@@ -75,7 +74,6 @@ function Reports() {
             </div>
          )}
 
-         {/* Mobile (< 600px): cards instead of a table (WF-55M) */}
          <div className="reports-mobile">
             {list.map(r => (
                <Link key={r.id} className="reports-card" to={"/admin/reports/" + r.id}>
