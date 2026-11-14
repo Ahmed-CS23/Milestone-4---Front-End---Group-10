@@ -1,0 +1,134 @@
+.rider-rides-page {
+   width: 100%;
+   max-width: 700px;
+   margin: 0 auto;
+   padding: 24px 16px 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.rider-rides-page h1,
+.rider-rides-page h2,
+.rider-rides-page p {
+   margin: 0;
+}
+
+.rider-rides-page h2 {
+   font-size: 1.125rem;
+}
+
+.rider-rides-card {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 16px;
+   border: 1px solid var(--line);
+   border-radius: var(--radius);
+   background: var(--surface);
+}
+
+.rider-rides-row {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 12px;
+}
+
+.rider-rides-card.rider-rides-row {
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.rider-rides-tabs a {
+   padding: 8px 14px;
+   border: 1px solid var(--line);
+   border-radius: 8px;
+   color: var(--ink);
+   text-decoration: none;
+}
+
+.rider-rides-tabs a[aria-current="page"] {
+   border-color: var(--ink);
+   background: var(--ink);
+   color: var(--surface);
+}
+
+.rider-rides-message,
+.rider-rides-warning {
+   padding: 12px;
+   border-radius: 8px;
+}
+
+.rider-rides-message,
+.rider-rides-button {
+   background: var(--ink);
+   color: var(--surface);
+}
+
+.rider-rides-credit-prompt {
+   border-color: var(--info);
+   background: #eef4ff;
+   color: var(--info);
+}
+
+.rider-rides-button,
+.rider-rides-danger,
+.rider-rides-cancel {
+   align-self: flex-start;
+   padding: 8px 14px;
+   border: 1px solid currentColor;
+   border-radius: 8px;
+   font: inherit;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.rider-rides-danger {
+   background: var(--error);
+   color: var(--surface);
+}
+
+.rider-rides-cancel {
+   background: var(--surface);
+   color: var(--error);
+}
+
+.rider-rides-link {
+   padding: 4px;
+   border: 0;
+   background: transparent;
+   color: var(--info);
+   font: inherit;
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.rider-rides-warning {
+   color: var(--warning);
+   background: #fff5d6;
+}
+
+.rider-rides-overlay {
+   position: fixed;
+   inset: 0;
+   z-index: 10;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 16px;
+   background: rgba(0, 0, 0, 0.35);
+}
+
+.rider-rides-dialog {
+   width: 100%;
+   max-width: 420px;
+   max-height: 100%;
+   overflow: auto;
+   color: var(--ink);
+}
+
+.rider-rides-dialog h2,
+.rider-rides-dialog p {
+   margin: 0;
+}
