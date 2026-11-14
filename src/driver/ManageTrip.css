@@ -1,0 +1,45 @@
+.driver-heading {
+   font-size: 22px;
+   font-weight: bold;
+}
+
+.driver-person {
+   display: flex;
+   align-items: flex-start;
+   gap: 10px;
+}
+
+.driver-person-text {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+}
+
+.driver-quote {
+   padding: 8px 10px;
+   font-size: 14px;
+   background-color: #f2f2f2;
+   border-radius: 6px;
+}
+
+.driver-details {
+   margin: 0;
+}
+
+.driver-details div {
+   display: flex;
+   gap: 12px;
+   padding: 9px 0;
+   font-size: 14px;
+   border-bottom: 1px solid var(--line);
+}
+
+.driver-details dt {
+   flex: 0 0 100px;
+   color: var(--muted);
+}
+
+.driver-details dd {
+   margin: 0;
+}

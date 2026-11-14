@@ -1,0 +1,423 @@
+/* Shared look for every driver page (Figma WF-30 to WF-41). Page-only rules live in each page's own .css file. */
+
+.driver-card {
+   width: 100%;
+   max-width: 430px;
+   margin: 0 auto;
+   padding: 0 16px 24px;
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   font-size: 15px;
+}
+
+.driver-card h2 {
+   margin: 4px 0 0;
+   font-size: 17px;
+}
+
+.driver-card p {
+   margin: 0;
+}
+
+/* Top bar: "← My trip" */
+.driver-topbar {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   margin: 0 -16px;
+   padding: 14px 16px;
+   border-bottom: 1px solid var(--line);
+   background-color: var(--surface);
+}
+
+.driver-topbar h1 {
+   margin: 0;
+   font-size: 18px;
+}
+
+.driver-back {
+   font-size: 22px;
+   line-height: 1;
+   color: var(--ink);
+   text-decoration: none;
+}
+
+/* Form controls */
+.driver-card label {
+   font-weight: bold;
+   font-size: 14px;
+}
+
+.driver-card input,
+.driver-card select {
+   width: 100%;
+   height: 44px;
+   padding: 0 12px;
+   font-size: 15px;
+   color: var(--ink);
+   border: 1px solid var(--line);
+   border-radius: 8px;
+   background-color: var(--surface);
+}
+
+.driver-card textarea {
+   width: 100%;
+   padding: 12px;
+   font-size: 15px;
+   font-family: inherit;
+   border: 1px solid var(--line);
+   border-radius: 8px;
+}
+
+.driver-card .driver-invalid {
+   border-color: var(--error);
+}
+
+.driver-card input[type="checkbox"] {
+   width: 20px;
+   height: 20px;
+   accent-color: var(--ink);
+}
+
+.driver-field {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+}
+
+/* Buttons: black background, white text, 8 px corners (team plan) */
+.driver-card input[type="submit"],
+.driver-button {
+   display: block;
+   width: 100%;
+   padding: 12px 0;
+   font-size: 15px;
+   font-weight: bold;
+   color: white;
+   background-color: var(--ink);
+   border: 0;
+   border-radius: 8px;
+   text-align: center;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.driver-secondary {
+   display: block;
+   width: 100%;
+   padding: 11px 0;
+   font-size: 15px;
+   font-weight: bold;
+   color: var(--ink);
+   background-color: var(--surface);
+   border: 1px solid var(--ink);
+   border-radius: 8px;
+   text-align: center;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.driver-danger {
+   display: block;
+   width: 100%;
+   padding: 12px 0;
+   font-size: 15px;
+   font-weight: bold;
+   color: white;
+   background-color: var(--error);
+   border: 0;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+.driver-button:disabled,
+.driver-secondary:disabled,
+.driver-danger:disabled,
+.driver-card input[type="submit"]:disabled {
+   color: var(--muted);
+   background-color: #e6e6e6;
+   border-color: #e6e6e6;
+   cursor: not-allowed;
+}
+
+.driver-text-link {
+   padding: 0;
+   font-size: 14px;
+   font-weight: bold;
+   color: var(--ink);
+   text-decoration: underline;
+   background-color: transparent;
+   border: 0;
+   cursor: pointer;
+}
+
+.driver-center {
+   text-align: center;
+}
+
+.driver-buttons {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+}
+
+.driver-buttons > * {
+   flex: 1 1 120px;
+}
+
+/* Text styles */
+.driver-hint {
+   font-size: 13px;
+   color: var(--muted);
+}
+
+.driver-muted {
+   color: var(--muted);
+}
+
+.driver-error {
+   font-size: 13px;
+   color: var(--error);
+}
+
+/* Toast */
+.driver-toast {
+   padding: 10px 14px;
+   font-size: 14px;
+   color: white;
+   background-color: var(--ink);
+   border-radius: 8px;
+}
+
+/* Pills */
+.driver-pill {
+   display: inline-block;
+   padding: 2px 8px;
+   font-size: 12px;
+   font-weight: bold;
+   border-radius: 999px;
+   white-space: nowrap;
+}
+
+.driver-pill.green {
+   color: var(--success);
+   background-color: #e8f5ec;
+}
+
+.driver-pill.amber {
+   color: var(--warning);
+   background-color: #fff4dc;
+}
+
+.driver-pill.blue {
+   color: var(--info);
+   background-color: #e8eefc;
+}
+
+.driver-pill.red {
+   color: var(--error);
+   background-color: #fdecec;
+}
+
+.driver-pill.grey {
+   color: var(--muted);
+   background-color: #efefef;
+}
+
+/* Avatar */
+.driver-avatar {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+   width: 34px;
+   height: 34px;
+   font-size: 12px;
+   font-weight: bold;
+   color: var(--ink);
+   background-color: #ececec;
+   border-radius: 50%;
+}
+
+/* Banners */
+.driver-banner {
+   display: flex;
+   gap: 10px;
+   padding: 12px;
+   font-size: 14px;
+   border-radius: 8px;
+}
+
+.driver-banner p {
+   margin: 0;
+}
+
+.driver-banner-title {
+   font-weight: bold;
+}
+
+.driver-banner.info {
+   background-color: #eef3fb;
+   border: 1px solid #9fb8e8;
+}
+
+.driver-banner.info .driver-banner-icon,
+.driver-banner.info .driver-banner-title {
+   color: var(--info);
+}
+
+.driver-banner.warning {
+   background-color: #fff6e0;
+   border: 1px solid #e8c77a;
+}
+
+.driver-banner.warning .driver-banner-icon,
+.driver-banner.warning .driver-banner-title {
+   color: var(--warning);
+}
+
+.driver-banner.error {
+   background-color: #fdecec;
+   border: 1px solid #f0a5a5;
+}
+
+.driver-banner.error .driver-banner-icon,
+.driver-banner.error .driver-banner-title {
+   color: var(--error);
+}
+
+/* Boxes and cards */
+.driver-box {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   padding: 12px;
+   background-color: var(--surface);
+   border: 1px solid var(--line);
+   border-radius: var(--radius);
+}
+
+.driver-summary {
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+   padding: 12px;
+   background-color: #f0f0f0;
+   border-radius: var(--radius);
+}
+
+.driver-split {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   gap: 8px;
+}
+
+.driver-strong {
+   font-weight: bold;
+}
+
+/* Trip list cards (dashboard, My Trips) */
+.driver-trip {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   padding: 12px;
+   color: var(--ink);
+   text-decoration: none;
+   background-color: var(--surface);
+   border: 1px solid var(--line);
+   border-radius: var(--radius);
+}
+
+.driver-trip:hover {
+   border-color: var(--ink);
+}
+
+.driver-trip-muted {
+   opacity: 0.7;
+}
+
+/* Tabs */
+.driver-tabs {
+   display: flex;
+   border-bottom: 1px solid var(--line);
+}
+
+.driver-tab {
+   flex: 1;
+   padding: 10px 4px;
+   font-size: 14px;
+   color: var(--muted);
+   background-color: transparent;
+   border: 0;
+   border-bottom: 2px solid transparent;
+   cursor: pointer;
+}
+
+.driver-tab-on {
+   font-weight: bold;
+   color: var(--ink);
+   border-bottom: 2px solid var(--ink);
+}
+
+/* Modal dialog (decline, cancel) */
+.driver-modal-back {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 16px;
+   background-color: rgba(0, 0, 0, 0.45);
+}
+
+.driver-modal {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   width: 100%;
+   max-width: 360px;
+   padding: 20px;
+   background-color: var(--surface);
+   border-radius: 12px;
+}
+
+.driver-modal h2 {
+   margin: 0;
+   font-size: 18px;
+}
+
+/* Centred result screens (expired, published, submitted) */
+.driver-result {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 8px;
+   padding: 32px 8px 8px;
+   text-align: center;
+}
+
+.driver-result-icon {
+   font-size: 34px;
+}
+
+.driver-result h2 {
+   margin: 0;
+}
+
+@media (min-width: 1024px) {
+   .driver-wide {
+      max-width: 960px;
+   }
+}
+
+.driver-card a.driver-strong,
+.driver-card a.driver-text-link {
+   color: var(--ink);
+}
