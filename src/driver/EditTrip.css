@@ -1,0 +1,4 @@
+/* Edit trip reuses the trip form (TripForm.css); this file only spaces the info banner. */
+.driver-card > .driver-banner + .driver-form {
+   margin-top: 4px;
+}

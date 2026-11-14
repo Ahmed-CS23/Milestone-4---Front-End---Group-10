@@ -1,0 +1,19 @@
+.driver-form {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+
+.driver-pair {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+}
+
+.driver-pair .driver-field {
+   flex: 1 1 140px;
+}
+
+.driver-right {
+   text-align: right;
+}
