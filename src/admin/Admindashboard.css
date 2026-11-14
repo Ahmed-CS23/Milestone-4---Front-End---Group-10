@@ -1,0 +1,231 @@
+/* Admin dashboard (Figma WF-51, 51a, 51b, 51c) */
+
+/* Box A: date range + export */
+.dash-toolbar {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.dash-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.dash-field input {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+.dash-button {
+    height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--ink);
+    background-color: var(--surface);
+    border: 1px solid var(--ink);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dash-button:disabled {
+    color: var(--muted);
+    border-color: var(--line);
+    cursor: not-allowed;
+}
+
+.dash-export {
+    margin-left: auto;
+}
+
+.dash-error {
+    margin: 12px 0 0;
+    color: var(--error);
+}
+
+.dash-toast {
+    margin: 12px 0 0;
+    padding: 10px 14px;
+    color: #ffffff;
+    background-color: var(--ink);
+    border-radius: 8px;
+}
+
+/* Box B: stat tiles */
+.dash-tiles {
+    display: grid;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.dash-tiles.four {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.dash-tiles.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.dash-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px;
+    background-color: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+.dash-tile strong {
+    font-size: 28px;
+}
+
+.dash-muted {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.dash-hint {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+/* Boxes C and D: bottom row */
+.dash-bottom {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+    align-items: start;
+}
+
+.dash-panel {
+    padding: 16px;
+    background-color: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+.dash-panel h2 {
+    margin: 0 0 12px;
+    font-size: 16px;
+}
+
+.dash-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.dash-table th,
+.dash-table td {
+    padding: 10px 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+}
+
+.dash-table th {
+    color: var(--muted);
+    font-weight: normal;
+    background-color: var(--bg);
+}
+
+/* Bar chart made of plain divs */
+.dash-chart {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    height: 160px;
+    padding-top: 20px;
+}
+
+.dash-bar-col {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+}
+
+.dash-bar {
+    width: 100%;
+    max-width: 36px;
+    background-color: var(--ink);
+    border-radius: 4px 4px 0 0;
+}
+
+.dash-bar-label {
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.dash-attention {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid var(--line);
+}
+
+.dash-attention:last-child {
+    border-bottom: none;
+}
+
+.dash-attention a {
+    color: var(--ink);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* WF-51a: empty state */
+.dash-empty {
+    margin-top: 16px;
+    padding: 48px 24px;
+    text-align: center;
+    background-color: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+.dash-empty h2 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.dash-empty p {
+    margin: 0 0 16px;
+    color: var(--muted);
+}
+
+/* Smaller screens */
+@media (max-width: 1000px) {
+    .dash-tiles.four {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dash-bottom {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .dash-tiles.four,
+    .dash-tiles.three {
+        grid-template-columns: 1fr;
+    }
+
+    .dash-export {
+        margin-left: 0;
+    }
+}
